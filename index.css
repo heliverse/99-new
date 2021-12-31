@@ -735,11 +735,12 @@ overflow: hidden;
 .work{
   display: flex;
   width: 90%;
+  margin-right: 50px;
   flex-direction: column;
   align-items: flex-start;
 }
 .work img{
-  width: 80%;
+  width: 100%;
 
 }
 .work-desc{
@@ -778,7 +779,7 @@ width: 400%;
   }
   .call-btn-container>h3 {
     /* font-size: 25px; */
-    padding: 0px 48px;}
+    padding: 0px 58px;}
     footer p {
       font-size: 12px;
       line-height: 20px;

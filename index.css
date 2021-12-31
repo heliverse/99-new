@@ -539,6 +539,9 @@ h3 {
   font-size: 15px;
   line-height: 20px;
 }
+.hide-timeline {
+  top: 10%;
+  left: 3%;}
 }
 @media screen and (max-width:950px){
   h1 {
@@ -588,8 +591,13 @@ h3 {
       top: 0;
       left: 0;
   }
+  .prev, .next {
+    margin: -20px 5px;
+    padding: 15px 25px; 
+    font-size: 25px;
+    top: 48%;
 }
-
+}
 
 
 
@@ -815,9 +823,9 @@ width: 400%;
 }
   .footer-col {
     padding: 20px;
-    width: 34%;
+    width: 48%;
 }
-  
+
 }
 
 

@@ -796,6 +796,11 @@ width: 400%;
   .companies-image-container img {
     width: 2rem;
 }
+.footer-col {
+  padding: 20px;
+  width: 45%;
+}
+
 }
 
 @media screen and (max-width:500px) {
@@ -821,11 +826,7 @@ width: 400%;
 .feature-desc{
   font-size: 10px;
 }
-  .footer-col {
-    padding: 20px;
-    width: 48%;
-}
-
+ 
 }
 
 

@@ -840,7 +840,15 @@ width: 400%;
 .feature-desc{
   font-size: 10px;
 }
- 
+#form-wrapper h3 {
+  text-align: start;
+  line-height: 22px;
+  font-size: 18px;
+}
+#form-wrapper {
+
+  max-width: 300px;
+}
 }
 
 

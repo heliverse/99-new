@@ -182,13 +182,13 @@ $(".features-titles h3").click(function () {
     changeFeature(id)
 })
 function changeFeature(id) {
-    $(".feature-img").attr({src: data[id].image})
+    $(".feature-img").attr({src: data[id].image,alt:"logo"})
     $(".feature-title").text(data[id].heading)
     $(".feature-desc").text(data[id].paragraph)
-    $(".company-img1").attr({src:data[id].comImg[0]})
-    $(".company-img2").attr({src:data[id].comImg[1]})
-    $(".company-img3").attr({src:data[id].comImg[2]})
-    $(".company-img4").attr({src:data[id].comImg[3]})
+    $(".company-img1").attr({src:data[id].comImg[0],alt:"logo"})
+    $(".company-img2").attr({src:data[id].comImg[1],alt:"logo"})
+    $(".company-img3").attr({src:data[id].comImg[2],alt:"logo"})
+    $(".company-img4").attr({src:data[id].comImg[3],alt:"logo"})
     
 }
 
@@ -205,6 +205,17 @@ $(".btn-book").click(()=>
 }
 )
 
+$(".row-img").click(function(){
+var id =($(this).find('img').attr("id"))
+var link =returnDay(id)
+window.open(link)
+})
+$(".work-img").click(function(){
+    var id =$(this).attr("id")
+
+    var link =returnDay(id)
+window.open(link)
+})
 function returnDay(val) {
     switch (val) {
       case "1":

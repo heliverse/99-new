@@ -116,7 +116,11 @@ h4{
 #form >div{
   display: flex;
   width: 90%;
+  justify-content: space-between;
     align-items: stretch
+}
+#form >div input{
+  width: 55%;
 }
 #form div:nth-child() {
   width: 40%;

@@ -191,7 +191,9 @@ function changeFeature(id) {
     $(".company-img4").attr({ src: data[id].comImg[3] })
 
 }
-
+$(".business-logo").click(function () {
+    window.open("mailto:")
+  })
 $("#cut-btn").click(() => {
     $("#popup").css("display", "none")
 }

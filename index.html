@@ -9,6 +9,7 @@
   <title>99 Startup</title>
   <link rel="stylesheet" href="/index.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
 </head>
 
 <body>
@@ -32,16 +33,19 @@
           <input name="Name" type="text" placeholder="Enter your name" required><br />
           <input type="email" name="Email" placeholder="Enter your Email" required><br />
           <div>
-            <div>
-              <label for="phonenumber"><img src="./assest/flag.webp" alt="logo"></label>
+            <div style="    display: flex;
+            align-items: center;
+        ">
+              <label for="phonenumber"><img id="flag" src="./assest/flag.webp" alt="logo"></label>
               <select name="Phonenumber" id="cars">
+                
                 <option value="India">(+91)</option>
 
               </select>
             </div>
 
 
-            <input type="tel" pattern="[0-9]{10}" placeholder="Enter your Phone Number">
+            <input type="tel" pattern="[0-9]" maxlength="10" placeholder="Enter your Phone Number">
           </div>
           <br />
           <input id="submit-btn" type="submit" value="Continue" />
@@ -84,7 +88,7 @@
       <header>
         <nav>
           <a href="https://www.99xstartup.com" target="__blank" class="logo">
-            <img src="./assest/99.webp"  alt="99xstartup">
+            <img src="./assest/99.webp" alt="99xstartup">
           </a>
           <div class="business-logo">
             <button class="mob">Get in Touch</button>
@@ -117,26 +121,26 @@
         <div class="marquee-container">
           <img src="./assest/Expertrons _ Website 1.webp" alt="logo" class="marquee-image">
           <!-- <img src="./images/Logos/Whitehat.png" class="marquee-image"> -->
-          <img src="./assest/Practo.webp"alt="logo" class="marquee-image">
-          <img src="./assest/FAE.webp"alt="logo" class="marquee-image">
-          <img src="./assest/Sru Project logo_black 3.webp"alt="logo" class="marquee-image">
-          <img src="./assest/Moneyfactory.webp"  alt="logo"class="marquee-image">
-          <img src="./assest/MLT.webp"alt="logo" class="marquee-image">
-          <img src="./assest/Huupe.webp"alt="logo" class="marquee-image">
+          <img src="./assest/Practo.webp" alt="logo" class="marquee-image">
+          <img src="./assest/FAE.webp" alt="logo" class="marquee-image">
+          <img src="./assest/Sru Project logo_black 3.webp" alt="logo" class="marquee-image">
+          <img src="./assest/Moneyfactory.webp" alt="logo" class="marquee-image">
+          <img src="./assest/MLT.webp" alt="logo" class="marquee-image">
+          <img src="./assest/Huupe.webp" alt="logo" class="marquee-image">
 
         </div>
         <div class="marquee-container1">
-          <img src="./assest/OTO.webp" alt="logo"class="marquee-image1">
-          <img src="./assest/Citi Venture.webp"alt="logo" class="marquee-image1">
+          <img src="./assest/OTO.webp" alt="logo" class="marquee-image1">
+          <img src="./assest/Citi Venture.webp" alt="logo" class="marquee-image1">
 
-          <img src="./assest/SBNation Logo.webp"alt="logo" class="marquee-image1">
-          <img src="./assest/Kia Motors Logo.webp" alt="logo"class="marquee-image1">
-          <img src="./assest/Hard Rock Logo.webp" alt="logo"class="marquee-image1">
-          <img src="./assest/SunburnFestiveProperty 1.webp"alt="logo" alt="titan">
-          <img src="./assest/Titan.webp" alt="logo"class="marquee-image1">
-          <img src="./assest/Viacom.webp"alt="logo" class="marquee-image1">
-          <img src="./assest/Amazon.webp" alt="logo"class="marquee-image1">
-          <img src="./assest/Fuse.webp"alt="logo" class="marquee-image1">
+          <img src="./assest/SBNation Logo.webp" alt="logo" class="marquee-image1">
+          <img src="./assest/Kia Motors Logo.webp" alt="logo" class="marquee-image1">
+          <img src="./assest/Hard Rock Logo.webp" alt="logo" class="marquee-image1">
+          <img src="./assest/SunburnFestiveProperty 1.webp" alt="logo" alt="titan">
+          <img src="./assest/Titan.webp" alt="logo" class="marquee-image1">
+          <img src="./assest/Viacom.webp" alt="logo" class="marquee-image1">
+          <img src="./assest/Amazon.webp" alt="logo" class="marquee-image1">
+          <img src="./assest/Fuse.webp" alt="logo" class="marquee-image1">
         </div>
       </div>
     </section>
@@ -145,7 +149,7 @@
 
 
 
-    <section id="timeline" class="we" >
+    <section id="timeline" class="we">
 
       <div class="responsive">
 
@@ -481,7 +485,7 @@
             </p>
           </div>
           <div class="work">
-            <img src="./assest/health.webp" id="4"  alt="logo"class="work-img">
+            <img src="./assest/health.webp" id="4" alt="logo" class="work-img">
             <h2 class="work-title black">Healthcare</h2>
             <div class="badges">
               <span class="badge">UI/UX</span>
@@ -521,7 +525,7 @@
             </p>
           </div>
           <div class="work">
-            <img src="./assest/alivio.webp" id="7" alt="logo"class="work-img">
+            <img src="./assest/alivio.webp" id="7" alt="logo" class="work-img">
             <h2 class="work-title black">Alivio</h2>
             <div class="badges">
               <span class="badge">UI/UX</span>
@@ -560,7 +564,7 @@
             </p>
           </div>
           <div class="work">
-            <img src="./assest/gausemann.webp" id="10" alt="logo"class="work-img">
+            <img src="./assest/gausemann.webp" id="10" alt="logo" class="work-img">
             <h2 class="work-title black">Gausmann</h2>
             <div class="badges">
               <span class="badge">UI/UX</span>
@@ -572,7 +576,7 @@
             </p>
           </div>
           <div class="work">
-            <img src="./assest/intute.webp" id="11" alt="logo"class="work-img">
+            <img src="./assest/intute.webp" id="11" alt="logo" class="work-img">
             <h2 class="work-title black">Intuit</h2>
             <div class="badges">
               <span class="badge">UI/UX</span>
@@ -640,10 +644,10 @@
 
           <div class="companies-image-container" style="    display: flex;
             align-items: center;">
-            <img src="./assest/replace.webp" alt="logo" class="company-img1">
-            <img src="./assest/fiverr.webp" alt="logo" class="company-img2">
-            <img src="./assest/upwork.webp" alt="logo"  class="company-img3">
-            <img src="./assest/toptal.webp" alt="logo"  class="company-img4">
+            <img src="./assest/replace.webp" alt="" class="company-img1">
+            <img src="./assest/fiverr.webp" alt="" class="company-img2">
+            <img src="./assest/upwork.webp" alt="" class="company-img3">
+            <img src="./assest/toptal.webp" alt="" class="company-img4">
           </div>
 
 
@@ -683,15 +687,15 @@
 
               <div class="companies-image-container">
                 <img src="./assest/replace.webp" alt="logo">
-                <img src="./assest/fiverr.webp" alt="logo"class="company-img">
-                <img src="./assest/upwork.webp" alt="logo"class="company-img">
-                <img src="./assest/toptal.webp" alt="logo"class="company-img">
+                <img src="./assest/fiverr.webp" alt="logo" class="company-img">
+                <img src="./assest/upwork.webp" alt="logo" class="company-img">
+                <img src="./assest/toptal.webp" alt="logo" class="company-img">
               </div>
             </div>
           </div>
           <div class="feature">
             <h2 class="feature-heading">Everything you need is here.</h2>
-            <img src="./assest/network.webp" alt="logo"alt="logo" class="feature-img">
+            <img src="./assest/network.webp" alt="logo" alt="logo" class="feature-img">
             <h3 class="feature-title pink">
               Everything from Digital to Design to Tech
             </h3>
@@ -706,7 +710,7 @@
                 <img src="./assest/replace.webp" alt="logo">
                 <img src="./assest/fiverr.webp" alt="logo" class="company-img">
                 <img src="./assest/upwork.webp" alt="logo" class="company-img">
-                <img src="./assest/toptal.webp" alt="logo"class="company-img">
+                <img src="./assest/toptal.webp" alt="logo" class="company-img">
               </div>
             </div>
           </div>
@@ -755,9 +759,9 @@
             </p>
             <div class="companies-image-container">
               <img src="./assest/replace.webp" alt="logo">
-              <img src="./assest/asana.webp" alt="logo"class="company-img">
-              <img src="./assest/trello.webp"alt="logo" class="company-img">
-              <img src="./assest/jira.webp"alt="logo" class="company-img">
+              <img src="./assest/asana.webp" alt="logo" class="company-img">
+              <img src="./assest/trello.webp" alt="logo" class="company-img">
+              <img src="./assest/jira.webp" alt="logo" class="company-img">
             </div>
           </div>
         </div>
@@ -799,7 +803,7 @@
               <div class="about">
                 <strong>Kevin Cornwell,</strong>
                 <p>Chief Marketing Officer</p>
-                <img  alt="logo"src="./assest/ENCORE.webp">
+                <img alt="logo" src="./assest/ENCORE.webp">
               </div>
             </div>
           </div>
@@ -814,12 +818,12 @@
               to the final delivery. ”
             </div>
             <div class="about-member-container">
-              <img  alt="logo"src="./assest/line.webp" class="line">
-              <img  alt="logo"src="./assest/img-2(1).webp" class="member-profile-photo">
+              <img alt="logo" src="./assest/line.webp" class="line">
+              <img alt="logo" src="./assest/img-2(1).webp" class="member-profile-photo">
               <div class="about">
                 <strong>Pamela Sidco,</strong>
                 <p>Head of Product &amp; UX</p>
-                <img  alt="logo"src="./assest/gausmann.webp">
+                <img alt="logo" src="./assest/gausmann.webp">
               </div>
             </div>
           </div>
@@ -834,12 +838,12 @@
               delivered from the get go.”
             </div>
             <div class="about-member-container">
-              <img  alt="logo"src="./assest/line.webp" class="line">
+              <img alt="logo" src="./assest/line.webp" class="line">
               <img alt="logo" src="./assest/img-3(1).webp" class="member-profile-photo">
               <div class="about">
                 <strong>Billy Kane,</strong>
                 <p>VP of Marketing</p>
-                <img  alt="logo"src="./assest/wehaveissus.webp">
+                <img alt="logo" src="./assest/wehaveissus.webp">
               </div>
             </div>
           </div>
@@ -854,7 +858,7 @@
     <footer>
       <div class="footer-container">
         <div class="footer-col">
-          <img src="./assest/logo-colored.webp"  alt="logo">
+          <img src="./assest/logo-colored.webp" alt="logo">
           <p class="white">
             99x Startup is a platform designed for Startups and Agile Enterprises alike to build &amp; grow their
             business with quality work &amp; structured services.

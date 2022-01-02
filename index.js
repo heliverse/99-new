@@ -192,8 +192,8 @@ function changeFeature(id) {
 
 }
 $(".business-logo").click(function () {
-    window.open("mailto:")
-  })
+    window.open("mailto:business@99x.network")
+})
 $("#cut-btn").click(() => {
     $("#popup").css("display", "none")
 }
@@ -243,3 +243,25 @@ function returnDay(val) {
 
     }
 }
+
+
+
+
+
+var form = document.getElementById("form");
+form.addEventListener("submit", e => {
+    e.preventDefault();
+    fetch("https://sheetdb.io/api/v1/q45tehsrqv3uq", { method: "POST", body: new FormData(document.getElementById("form")) })
+        //   .then(response => response.json())
+        .then((res) => {
+            if (res.status === 400) {
+                location.assign("./thanku.html")
+            }
+        })
+        .catch(err => { console.log(err) })
+});
+
+
+// $("#mst-btn").click(() => {
+//   $("#message-popup-container").hide()
+// })

@@ -785,8 +785,8 @@ select {
   }
 
   .logo img {
-    width: 120px;
-    height: 40px;
+    width: 100px;
+    height: 35px;
   }
 
   header nav div button {
@@ -805,7 +805,7 @@ select {
   }
 
   header {
-    height: 6vh;
+    /* height: 6vh; */
     background-color: #2f2f2f;
   }
 

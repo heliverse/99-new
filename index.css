@@ -58,12 +58,12 @@ h2 {
 }
 
 h3 {
-  font-size: 30px;
-  margin: 20px 0px;
+  font-size: 32px;
+  margin: 35px 0px;
 }
 
 h4 {
-  font-size: 1.2rem;
+  font-size: 12px;
   margin: 20px 0px;
 }
 
@@ -192,8 +192,8 @@ video {
 }
 
 .logo img {
-  width: 150px;
-  height: 50px;
+  width: 129px;
+      height: 36px;
 }
 
 header {
@@ -210,7 +210,7 @@ header nav {
 }
 
 .transition-container {
-  margin: 20px 0px;
+  margin: 30px 0px;
 }
 
 .top-section {
@@ -228,9 +228,11 @@ header nav {
   font-weight: bold;
   border-radius: 4px;
   padding: 16px 32px;
+  margin: 50px 0px;
+}
+.call-btn-container .btn-book  {
   margin: 20px 0px;
 }
-
 .marquee-container,
 .marquee-container1 {
   margin: 2rem 0rem;
@@ -245,14 +247,19 @@ header nav {
 
 .marquee-container1>img,
 .marquee-container>img {
-  height: 1.8rem;
-  margin: 0.5rem 1.5rem;
+  height: 2rem;
+  margin: 1rem;
 }
 
 .companies {
-  overflow: hidden;
+    padding: 50px 0px;
   background: linear-gradient(180deg, #DC1871 3.56%, #FF0055 100%);
 }
+  .companies-wrapper {  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
 
 @keyframes scroll {
   from {
@@ -277,7 +284,7 @@ header nav {
 .recent-work-section,
 .feature-section {
 
-  padding: 30px 0px;
+  padding: 80px 0px;
 }
 
 .recent-work-section>h2 {
@@ -321,7 +328,8 @@ header nav {
   border: 1px solid white;
   border-radius: 30px;
   font-size: 12px;
-  padding: .9rem;
+  padding: .4rem;
+  font-weight: 800;
 }
 
 .row-img:hover.row-hide-para {
@@ -394,15 +402,16 @@ header nav {
 
 .feature-desc,
 .features-desc {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 30px;
-  margin: 60px 0px;
+  margin: 40px 0px;
+
 }
 
 .call-btn-container {
   background-color: #424ba6;
   color: white;
-  padding: 30px 0px;
+  padding: 50px 0px;
   text-align: center;
 }
 
@@ -460,7 +469,7 @@ header nav {
 
 .container2>div {
   width: 50%;
-  padding: 30px 0px;
+  padding: 60px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -518,8 +527,10 @@ footer p {
 }
 
 .copyright {
-  border-top: 2px solid white;
-  padding: 1rem;
+  border-top: 1px solid white;
+  padding: 1rem 0rem;
+  width: 80%;
+  margin: auto;
   font-size: 1rem;
 }
 
@@ -538,14 +549,16 @@ footer p {
 }
 
 .hide-timeline-wrapper>div {
-  margin: 80px;
+  margin:300px 40px 100px 90px;
+
+
   max-width: 600px;
 
 }
 
 .hide-timeline-wrapper>div h4 {
   color: white;
-  font-size: 22px;
+  font-size: 15px;
 }
 
 .companies-image-container img {
@@ -561,7 +574,19 @@ footer p {
   font-size: 18px;
   line-height: 150%;
 }
-
+.about img{
+  width: 50px;
+  height: 15px;
+}
+.about p{
+  margin: 10px 0px;
+}
+#timeline >div:first-child{
+  position: absolute;
+    z-index: 2;
+    color: white;
+    margin: 50px 155px;
+}
 @media screen and (max-width:1250px) {
   h2 {
     font-size: 40px;
@@ -651,9 +676,9 @@ footer p {
     font-size: 15px;
   }
 
-  .hide-timeline-wrapper>div {
+  /* .hide-timeline-wrapper>div {
     margin: 80px 20px;
-  }
+  } */
 
   .footer-col {
     width: 17%;
@@ -666,9 +691,15 @@ footer p {
     font-size: 25px;
     top: 48%;
   }
+
+.hide-timeline-wrapper>div {
+    margin: 200px 40px 100px 0px;
 }
+#timeline >div:first-child {
 
-
+  margin: 50px 60px;
+}
+}
 
 @media screen and (max-width:700px) {
   h2 {
@@ -804,10 +835,7 @@ select {
     padding: 10px 0px;
   }
 
-  header {
-    /* height: 6vh; */
-    background-color: #2f2f2f;
-  }
+
 
   .btn-book {
     font-size: 14px;
@@ -903,7 +931,7 @@ select {
   }
 
   .feature-img {
-    width: 90%;
+    width: 70%;
   }
 
   .feature {
@@ -953,6 +981,10 @@ select {
 }
 
 @media screen and (max-width:500px) {
+  .feature-title ,.feature-heading {
+    font-size: 17px;
+  
+}
   .hide-timeline-wrapper>div h2 {
     font-size: 22px;
     margin: 10px 0px;
@@ -977,16 +1009,23 @@ select {
   }
   #cut-btn img {
     width: 1rem;}
-  .hide-timeline-wrapper>div {
-    margin: 30px -26px;
-  }
+
  .transition-container .btn-book{
     color: var(--color-dark);
     background-color: white;
   }
   .hide-timeline-wrapper-mob {
     padding: 30px;}
+    
+.copyright {
+  width: 90%;}
+  .hide-timeline-wrapper>div {
+    margin: 100px 40px 50px 0px;}
+
+#timeline >div:first-child {
+  margin: 0px 60px;}
 }
+
 
 @media screen and (max-width:420px) {
   .call-btn-container>h3 {

@@ -916,9 +916,9 @@ select {
 margin: 50px 0px; 
 text-align: center;
   }
-  .feature-section-mobile{
+  /* .feature-section-mobile{
     margin: 50px 0px;
-  }
+  } */
   .call-btn-container {
     padding: 30px 0px;}
   .works {
@@ -971,6 +971,7 @@ text-align: center;
 
   .features {
     width: 460%;
+    padding-bottom: 50px;
     display: flex;
   }
 

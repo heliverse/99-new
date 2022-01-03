@@ -17,7 +17,7 @@ async function myTimer() {
     }
 }
 // transition text
-let topics = ["mobile apps ", "website ", "product"];
+let topics = ["Mobile Apps ", "Websites ", "Products"];
 
 new Typed('#typed', {
     strings: topics,

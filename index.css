@@ -575,8 +575,12 @@ footer p {
   line-height: 150%;
 }
 .about img{
-  width: 50px;
+  width: 70px;
   height: 15px;
+}
+.about img:last-child{
+  width: 40px;
+  height: 30px;
 }
 .about p{
   margin: 10px 0px;
@@ -725,7 +729,7 @@ footer p {
   .marquee-container1>img,
   .marquee-container>img {
     height: 1.5rem;
-    margin: 0.1rem 1rem;
+    margin: 0.1rem .4rem;
   }
 
   .marquee-container,
@@ -781,7 +785,9 @@ footer p {
     font-size: 30px;
   }
 
-
+  .hide-timeline-wrapper>div h4 {
+    font-size: 12px;
+}
 
 
 }
@@ -817,8 +823,8 @@ select {
   }
 
   .logo img {
-    width: 100px;
-    height: 35px;
+    width: 70px;
+    height: 22px;
   }
 
   header nav div button {
@@ -851,7 +857,7 @@ select {
 
   .marquee-container,
   .marquee-container1 {
-    margin: 1rem 0rem;
+    margin: 2rem 0rem;
   }
 
   .feature-desc,

@@ -164,13 +164,12 @@ select {
 
 #form>input {
   width: 90%;
-  font-size:16px;
-  padding: 12px;
-  margin: 10px 0px;
+  padding: 10px;
+  margin: 7px 0px;
 }
 
 #submit-btn {
-background: #DC1871;
+  background-color: #ff0055;
   color: white;
   border: none;
   border-radius: 5px;
@@ -550,7 +549,7 @@ footer p {
 }
 
 .hide-timeline-wrapper>div {
-  margin:300px 40px 100px 90px;
+  margin:300px 40px 100px 150px;
 
 
   max-width: 600px;
@@ -563,8 +562,8 @@ footer p {
 }
 
 .companies-image-container img {
-  width: 5rem;
-  margin-right: 12px;
+  width: 4rem;
+  margin-right: 7px;
 }
 
 .quote-text {
@@ -576,7 +575,7 @@ footer p {
   line-height: 150%;
 }
 .about img{
-
+  width: 70px;
   height: 15px;
 }
 
@@ -592,6 +591,10 @@ footer p {
 .footer-col p{
   margin: 4px 0px;
 
+  }
+  .hide-timeline-wrapper{
+    width: 1650px;
+    margin: auto;
   }
 @media screen and (max-width:1250px) {
   h2 {
@@ -1034,13 +1037,13 @@ text-align: center;
 .copyright {
   width: 90%;}
   .hide-timeline-wrapper>div {
-    margin: 170px 0px 0px 0px;}
+    margin: 170px 0px 0px 30px;}
 .footer-col p{
   margin: 3px 0px;
 
   }
 #timeline >div:first-child {
-  margin: 30px 60px;}
+  margin: 30px;}
   .companies {
     padding: 30px 0px;}
     .about img {

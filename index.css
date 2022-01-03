@@ -991,7 +991,8 @@ select {
   .call-btn-container>h3 {
     padding: 0px 68px;
   }
-
+  .hide-timeline-wrapper-mob {
+    padding: 30px;}
   #form-wrapper h3 {
     text-align: start;
     line-height: 22px;

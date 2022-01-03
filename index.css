@@ -983,6 +983,10 @@ select {
   .hide-timeline-wrapper>div {
     margin: 30px -26px;
   }
+ .transition-container .btn-book{
+    color: var(--color-dark);
+    background-color: white;
+  }
 }
 
 @media screen and (max-width:420px) {

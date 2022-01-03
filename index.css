@@ -770,6 +770,7 @@ footer p {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 50px 0px;
   }
 
   .footer-col {
@@ -840,6 +841,7 @@ select {
   .btn-book {
     font-size: 14px;
     padding: 10px 12px;
+    margin: 30px 0px;
   }
 
   .marquee-container1>img,
@@ -875,11 +877,15 @@ select {
     left: 0;
   }
 
-  .recent-work-section-mobile {
-
-    text-align: center;
+ .recent-work-section-mobile {
+margin: 50px 0px; 
+text-align: center;
   }
-
+  .feature-section-mobile{
+    margin: 50px 0px;
+  }
+  .call-btn-container {
+    padding: 30px 0px;}
   .works {
     width: 1000%;
     display: flex;
@@ -1020,10 +1026,12 @@ select {
 .copyright {
   width: 90%;}
   .hide-timeline-wrapper>div {
-    margin: 100px 40px 50px 0px;}
+    margin: 170px 0px 0px 0px;}
 
 #timeline >div:first-child {
-  margin: 0px 60px;}
+  margin: 30px 60px;}
+  .companies {
+    padding: 30px 0px;}
 }
 
 

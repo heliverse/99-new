@@ -578,10 +578,7 @@ footer p {
   width: 70px;
   height: 15px;
 }
-.about img:last-child{
-  width: 40px;
-  height: 30px;
-}
+
 .about p{
   margin: 10px 0px;
 }
@@ -1038,6 +1035,9 @@ text-align: center;
   margin: 30px 60px;}
   .companies {
     padding: 30px 0px;}
+    .about img {
+      width: 40px;
+      height: 15px;}
 }
 
 

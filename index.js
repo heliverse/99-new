@@ -72,26 +72,30 @@ $(document).ready(function () {
     });
 
 
+setTimeout(()=>{
+    $('.marquee-container').marquee({
+        direction: 'left',
+        duration: 14000,
+        gap: 50,
+        delayBeforeStart: 0,
+        duplicated: true,
+        startVisible: true
+    });
+    $('.marquee-container1').marquee({
+        direction: 'right',
+        duration: 14000,
+        gap: 50,
+        delayBeforeStart: 0,
+        duplicated: true,
+        startVisible: true
+    });
 
 
+},2000
+)
 
 })
-$('.marquee-container').marquee({
-    direction: 'left',
-    duration: 14000,
-    gap: 50,
-    delayBeforeStart: 0,
-    duplicated: true,
-    startVisible: true
-});
-$('.marquee-container1').marquee({
-    direction: 'right',
-    duration: 14000,
-    gap: 50,
-    delayBeforeStart: 0,
-    duplicated: true,
-    startVisible: true
-});
+
 
 let slideIndex = 1;
 let slideIndexWork = 1;

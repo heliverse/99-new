@@ -5,27 +5,26 @@ var video = $("#myvideo")
 var myVar = setInterval(myTimer, 1000);
 async function myTimer() {
     if (video[0].readyState === 4) {
-        // alert("jjhub")
+    
         $("#loader").css("display", "none")
-        // $(".container-wrapper").css("display", "block")
-        $("#timeline").css("display","block")
-        $(".top-section").css("display","block")
-        $("#const").css("display","block")
-        $(".call-btn-container").css("display","block")
-        $(".container2").css("display","flex") 
-        $("footer").css("display","block")
+        $("#timeline").css("display", "block")
+        $(".top-section").css("display", "block")
+   
+        $("#const").css("display", "block")
+        $(".call-btn-container").css("display", "block")
+        $(".container2").css("display", "flex")
+        $("footer").css("display", "block")
         video[0].currentTime = 1
         clearInterval(myVar)
     }
     else {
-        // $(".container-wrapper").css("display", "none")
         $("#loader").css("display", "block")
-        $("#timeline").css("display","none")
-        $(".top-section").css("display","none")
-        $("#const").css("display","none")
-        $(".call-btn-container").css("display","none")
-        $(".container2").css("display","none") 
-        $("footer").css("display","none")
+        $("#timeline").css("display", "none")
+        $(".top-section").css("display", "none")
+        $("#const").css("display", "none")
+        $(".call-btn-container").css("display", "none")
+        $(".container2").css("display", "none")
+        $("footer").css("display", "none")
     }
 }
 // transition text
@@ -75,7 +74,7 @@ $(document).ready(function () {
 
 
 
-    
+
 })
 $('.marquee-container').marquee({
     direction: 'left',

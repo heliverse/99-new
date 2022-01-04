@@ -215,20 +215,21 @@ header nav {
 }
 
 .top-section {
+  transform: translateY(100%);
+  animation: reveal 1.7s cubic-bezier(1, 0, 0.3, 0.9) forwards;
   text-align: center;
   background: linear-gradient(180deg, #E00C53 3.56%, #DC1871 100%),
     linear-gradient(180deg, #000000 3.56%, #353535 100%);
   color: white;
-  animation-name: fadeInBottom 2s;
+
+}
+@keyframes reveal{
+  from
+    {transform: translateY(100%);}
+  to
+   { transform: translateY(0);}
 }
 
-@keyframes fadeInBottom {
-    from {
-        opacity: 0;
-        transform: translateY(100%);
-    }
-    to { opacity: 1 }
-}
 .btn-book {
   background-color: var(--color-dark);
   border: none;

@@ -55,7 +55,7 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 2000000000,
         dots: true,
         arrows: false,
     });
@@ -202,48 +202,6 @@ $(".btn-book").click(() => {
     $("#popup").css("display", "flex")
 }
 )
-
-$(".row-img").click(function () {
-    var id = ($(this).find('img').attr("id"))
-    var link = returnDay(id)
-    window.open(link, 'Download')
-})
-$(".work-img").click(function () {
-    var id = $(this).attr("id")
-
-    var link = returnDay(id)
-    window.open(link, 'Download')
-})
-function returnDay(val) {
-    switch (val) {
-        case "1":
-            return "https://drive.google.com/file/d/1I2VSRgXRIoftl7Sp5Pnk8rGF1F4w3Nqc/view?usp=sharing";
-        case "2":
-            return "https://drive.google.com/file/d/1n_fdY76AGN22locgzbnv27vMb80P8i-G/view?usp=sharing";
-        case "3":
-            return "https://drive.google.com/file/d/1tDsX2G9lhFtb3GkyPmXXJQYsdcZ_0gnC/view?usp=sharing";
-        case "4":
-            return "https://drive.google.com/file/d/1EbpEJC8jRgaArIy1Mg6JDAevCipi_IoC/view?usp=sharing";
-        case "5":
-            return "https://drive.google.com/file/d/1R6wDkpy-dYn3rn0K9oP2UvOInE-xDGiO/view?usp=sharing";
-        case "6":
-            return "https://drive.google.com/file/d/1s37825aCWfGU5_G2JyJO3DC7nDQHEvmk/view?usp=sharing";
-        case "7":
-            return "https://drive.google.com/file/d/1vtuxvdaN-CHlFMgYPW2oiB_b5R-bwRfm/view?usp=sharing";
-        case "8":
-            return "https://drive.google.com/file/d/13sEW5Lfdsqlaj7iGO3-i0DIfSCtaj7bn/view?usp=sharing";
-        case "9":
-            return "https://drive.google.com/file/d/1A7VwcQH0rWFeox9nRaprtw4dO8xmpSey/view?usp=sharing";
-        case "10":
-            return "https://drive.google.com/file/d/1fA-2O1kLCoB3GjB_OfDXXJ8ou9h4wITr/view?usp=sharing";
-        case "11":
-            return "https://drive.google.com/file/d/1UK90fWgCs9piGeBexLuXVY2OmgvdySVR/view?usp=sharing";
-        case "12":
-            return "https://drive.google.com/file/d/1A6QBq2P_g1rmE5f2Q-9Am1niO4CQeYmt/view?usp=sharing";
-
-    }
-}
-
 
 
 

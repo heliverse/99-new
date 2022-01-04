@@ -912,7 +912,17 @@ select {
     top: 0;
     left: 0;
   }
-
+  #sticky-btn{
+    position: fixed;
+        width: 100%;
+        bottom: 0;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    
+  }
  .recent-work-section-mobile {
 margin: 50px 0px; 
 text-align: center;
@@ -1082,17 +1092,7 @@ text-align: center;
       width: 40px;
       height: 15px;}
       
-#sticky-btn{
-  position: fixed;
-      width: 100%;
-      bottom: 0;
-      z-index: 2;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-  
-}
+
 }
 
 

@@ -238,12 +238,13 @@ header nav {
 .marquee-container1 {
   margin: 2rem 0rem;
   display: flex;
+  white-space: nowrap;
   animation: scroll 25s linear infinite;
   position: relative;
 }
 
 .marquee-container1 {
-  animation: scrollRight 27s linear infinite;
+  animation: scrollRight 30s linear infinite;
 }
 
 .marquee-container1>img,
@@ -263,22 +264,22 @@ header nav {
 
 
 @keyframes scroll {
-  from {
-    left: 100vw;
+  0% {
+    left: 50%;
+  }
+  100% {
+    left: -50%
   }
 
-  to {
-    left: -100vw;
-  }
+  
 }
 
 @keyframes scrollRight {
-  from {
-    right: 100vw;
+  0% {
+    right: 100%;
   }
-
-  to {
-    right: -100vw;
+  100% {
+    right: -100%
   }
 }
 
@@ -549,37 +550,29 @@ footer p {
 #timeline .slick-list {
   background: black
 }
-
 .hide-timeline-wrapper>div {
   margin:300px 40px 100px 150px;
-
-
   max-width: 600px;
-
 }
-
 .hide-timeline-wrapper>div h4 {
   color: white;
   font-size: 15px;
 }
-
 .companies-image-container img {
-  width: 4rem;
-  margin-right: 7px;
+  width: 5rem;
+  margin-right: 15px;
 }
-
 .quote-text {
   font-size: 36px;
   /* margin-right: 21%; */
 }
-
 .slideshow-text {
   font-size: 18px;
   line-height: 150%;
 }
 .about img{
-  width: 70px;
-  height: 15px;
+ 
+  height: 20px;
 }
 
 .about p{
@@ -606,9 +599,6 @@ footer p {
     border: 1px solid;
     text-decoration: none;
     font-weight: 800;
-  }
-  .quote>div{
-    margin-left: 15%;
   }
 
 @media screen and (max-width:1250px) {
@@ -916,7 +906,7 @@ select {
     position: fixed;
         width: 100%;
         bottom: 0;
-        z-index: 2;
+        z-index: 3;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -1034,7 +1024,15 @@ text-align: center;
   .hide-timeline-wrapper-mob{
     padding: 70px;
   }
+  .case-study-btn{
+    background: var(--color-primary);
+    color: white;
+    padding: 4px 8px;
+    font-weight: 100;
+    border-radius: 4px;
+    text-decoration: none;
 }
+  }
 
 @media screen and (max-width:500px) {
   h4{
@@ -1089,7 +1087,7 @@ text-align: center;
   .companies {
     padding: 30px 0px;}
     .about img {
-      width: 40px;
+
       height: 15px;}
       
 

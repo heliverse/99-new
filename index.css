@@ -479,6 +479,7 @@ overflow: hidden;
 
 footer {
   color: white;
+  padding: 4rem 0rem 0rem 7rem;
   background-color: var(--color-dark);
 }
 
@@ -490,6 +491,7 @@ footer {
 
 .footer-container {
   display: flex;
+
   max-width: 1700px;
   margin: auto;
   justify-content: end;
@@ -499,8 +501,8 @@ footer {
   display: flex;
   flex-direction: column;
   line-height: 2rem;
-  width: 16%;
-  padding: 50px;
+  width: 20%;
+  padding: 50px 0px;
 }
 
 footer hr {
@@ -515,8 +517,6 @@ footer p {
 .copyright {
   border-top: 1px solid white;
   padding: 1rem 0rem;
-  max-width: 1460px;
-  margin: auto;
   font-size: 1rem;
 }
 

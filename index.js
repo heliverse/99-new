@@ -5,15 +5,27 @@ var video = $("#myvideo")
 var myVar = setInterval(myTimer, 1000);
 async function myTimer() {
     if (video[0].readyState === 4) {
+        // alert("jjhub")
         $("#loader").css("display", "none")
-        $(".top-section").css("display", "block")
+        // $(".container-wrapper").css("display", "block")
+        $("#timeline").css("display","block")
+        $(".top-section").css("display","block")
+        $("#const").css("display","block")
+        $(".call-btn-container").css("display","block")
+        $(".container2").css("display","flex") 
+        $("footer").css("display","block")
         video[0].currentTime = 1
         clearInterval(myVar)
     }
     else {
-        $(".top-section").css("display", "none")
+        // $(".container-wrapper").css("display", "none")
         $("#loader").css("display", "block")
-
+        $("#timeline").css("display","none")
+        $(".top-section").css("display","none")
+        $("#const").css("display","none")
+        $(".call-btn-container").css("display","none")
+        $(".container2").css("display","none") 
+        $("footer").css("display","none")
     }
 }
 // transition text
@@ -55,11 +67,33 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000000000,
+        autoplaySpeed: 2000,
         dots: true,
         arrows: false,
     });
+
+
+
+
+    
 })
+$('.marquee-container').marquee({
+    direction: 'left',
+    duration: 14000,
+    gap: 50,
+    delayBeforeStart: 0,
+    duplicated: true,
+    startVisible: true
+});
+$('.marquee-container1').marquee({
+    direction: 'right',
+    duration: 14000,
+    gap: 50,
+    delayBeforeStart: 0,
+    duplicated: true,
+    startVisible: true
+});
+
 let slideIndex = 1;
 let slideIndexWork = 1;
 let slideIndexMember = 1;
@@ -202,6 +236,10 @@ $(".btn-book").click(() => {
     $("#popup").css("display", "flex")
 }
 )
+
+
+
+
 
 
 

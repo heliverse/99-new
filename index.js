@@ -5,29 +5,57 @@ var video = $("#myvideo")
 var myVar = setInterval(myTimer, 1000);
 async function myTimer() {
     if (video[0].readyState === 4) {
-    
+
         $("#loader").css("display", "none")
-        $("#timeline").css("display", "block")
-        $(".top-section").css("display", "block")
-   
-        $("#const").css("display", "block")
-        $(".call-btn-container").css("display", "block")
-        $(".container2").css("display", "flex")
-        $("footer").css("display", "block")
+        $(".container").css("display", "block")
         video[0].currentTime = 1
+        Marquee()
         clearInterval(myVar)
     }
     else {
         $("#loader").css("display", "block")
-        $("#timeline").css("display", "none")
-        $(".top-section").css("display", "none")
-        $("#const").css("display", "none")
-        $(".call-btn-container").css("display", "none")
-        $(".container2").css("display", "none")
-        $("footer").css("display", "none")
+        $(".container").css("display", "none")
     }
 }
-// transition text
+// marquee image ans carousal function
+
+function Marquee() {
+
+    $('.responsive').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: true,
+        arrows: false,
+    });
+    $('.marquee-container').marquee({
+        direction: 'left',
+        duration: 14000,
+        gap: 50,
+        delayBeforeStart: 0,
+        duplicated: true,
+        startVisible: true
+    });
+    $('.marquee-container1').marquee({
+        direction: 'right',
+        duration: 14000,
+        gap: 50,
+        delayBeforeStart: 0,
+        duplicated: true,
+        startVisible: true
+    });
+
+}
+
+
+
+
+//transition text //
+
+
+
+
 let topics = ["Mobile Apps ", "Websites ", "Products"];
 
 new Typed('#typed', {
@@ -59,43 +87,8 @@ new Typed('#type', {
     delaySpeed: 80,
     loop: true
 });
-//   carousal
-$(document).ready(function () {
 
-    $('.responsive').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        dots: true,
-        arrows: false,
-    });
-
-
-setTimeout(()=>{
-    $('.marquee-container').marquee({
-        direction: 'left',
-        duration: 14000,
-        gap: 50,
-        delayBeforeStart: 0,
-        duplicated: true,
-        startVisible: true
-    });
-    $('.marquee-container1').marquee({
-        direction: 'right',
-        duration: 14000,
-        gap: 50,
-        delayBeforeStart: 0,
-        duplicated: true,
-        startVisible: true
-    });
-
-
-},2000
-)
-
-})
-
+//latest  work slide img
 
 let slideIndex = 1;
 let slideIndexWork = 1;
@@ -165,7 +158,7 @@ function showSlidesWork(n) {
 }
 
 
-//para show
+// latest work para show
 
 $(".row-img").mouseover(function () {
     var para = $(this).find(".row-hide-para")
@@ -180,7 +173,7 @@ $(".row-img").mouseleave(function () {
 
 })
 
-// 
+// boots your startup//
 var data = [
 
     {
@@ -239,19 +232,11 @@ $(".btn-book").click(() => {
     $("#popup").css("display", "flex")
 }
 )
-
-
-
-
-
-
-
-
+//form//
 var form = document.getElementById("form");
 form.addEventListener("submit", e => {
     e.preventDefault();
     fetch("https://sheetdb.io/api/v1/q45tehsrqv3uq", { method: "POST", body: new FormData(document.getElementById("form")) })
-        //   .then(response => response.json())
         .then((res) => {
             if (res.status === 400) {
                 location.assign("./thanku.html")
@@ -260,7 +245,3 @@ form.addEventListener("submit", e => {
         .catch(err => { console.log(err) })
 });
 
-
-// $("#mst-btn").click(() => {
-//   $("#message-popup-container").hide()
-// })

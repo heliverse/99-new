@@ -1134,8 +1134,7 @@ margin-bottom: 20px;
 
 
 
-
-
-.top-section,#timeline,#const,.call-btn-container,.container2,footer{
+.container{
   display: none;
 }
+

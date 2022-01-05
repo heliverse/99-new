@@ -17,6 +17,14 @@ async function myTimer() {
         $(".container").css("display", "none")
     }
 }
+
+//video unmute mute function
+
+
+video.click( function (){
+    $(this).prop('muted', !$(this).prop('muted'));
+});
+
 // marquee image ans carousal function
 
 function Marquee() {

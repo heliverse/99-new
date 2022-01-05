@@ -15,8 +15,8 @@
               <img src="./assest/99.webp" alt="99xstartup">
             </a>
             <div class="business-logo">
-              <button class="mob">Get in Touch</button>
-              <h4 class="web">business@99x.network</h4>
+<!--               <button class="mob">Get in Touch</button> -->
+              <h4 id="mail-btn" class="web">business@99x.network</h4>
             </div>
           </nav>
   
@@ -32,8 +32,9 @@
   
   <script>
 
-
-
+document.getElementById("mail-btn").addEventListener("click",()=>{
+    window.open("mailto:business@99x.network")
+})
 document.getElementById("go-back").addEventListener("click",()=>{
  location.assign("./index.html")
 })

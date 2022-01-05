@@ -244,9 +244,9 @@ $(".btn-book").click(() => {
 var form = document.getElementById("form");
 form.addEventListener("submit", e => {
     e.preventDefault();
-    fetch("https://sheetdb.io/api/v1/q45tehsrqv3uq", { method: "POST", body: new FormData(document.getElementById("form")) })
+    fetch("https://api.99x.network/v1/crm/new-lead", { method: "POST", body: new FormData(document.getElementById("form")) })
         .then((res) => {
-            if (res.status === 400) {
+            if (res.status === 200) {
                 location.assign("./thanku.html")
             }
         })

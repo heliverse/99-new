@@ -563,10 +563,14 @@ footer p {
     color: white;
     margin: 50px 155px;
 }
-.footer-col p{
+.footer-col a{
+  text-decoration: none; 
   margin: 4px 0px;
-
+  }.footer-col a:hover{
+    
+    text-decoration: underline;
   }
+
   .hide-timeline-wrapper{
     width: 1650px;
     margin: auto;
@@ -1045,9 +1049,7 @@ margin-bottom: 20px;
   }
 
 @media screen and (max-width:500px) {
-  h4{
-    font-size: 12px;
-  }
+
   .feature-title ,.feature-heading {
     font-size: 17px;
 }

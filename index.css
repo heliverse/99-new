@@ -783,6 +783,7 @@ footer {
 	position: absolute;
 	top: 50%;
 	left: 5%;
+	z-index: 3;
 }
 
 .right-btn {

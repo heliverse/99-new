@@ -1,3 +1,15 @@
+function getQueryVariable(variable) {
+	var query = window.location.search.substring(1);
+	var vars = query.split("&");
+	for (var i = 0; i < vars.length; i++) {
+		var pair = vars[i].split("=");
+		if (decodeURIComponent(pair[0]) == variable) {
+			return decodeURIComponent(pair[1]);
+		}
+	}
+	console.log("Query variable %s not found", variable);
+}
+
 // video load function
 var video = $("#myvideo");
 var myVar = setInterval(myTimer, 1000);
@@ -80,77 +92,6 @@ new Typed("#type", {
 	delaySpeed: 80,
 	loop: true,
 });
-
-//latest  work slide img
-
-// let slideIndex = 1;
-// let slideIndexWork = 1;
-// let slideIndexMember = 1;
-// showSlidesQuestion(slideIndex);
-// showSlidesQuestion(slideIndex);
-// showSlidesWork(slideIndexWork);
-// showSlidesMember(slideIndexMember);
-// // Next/previous controls
-// function plusSlidesWork(n) {
-//     showSlidesWork((slideIndexWork += n));
-// }
-
-// // Thumbnail image controls
-// function currentSlide(n) {
-//     showSlidesQuestion((slideIndex = n));
-// }
-// function currentSlideQuestion(n) {
-//     showSlidesQuestion((slideIndex = n));
-// }
-
-// function currentSlidMember(n) {
-//     showSlidesMember((slideIndexMember = n));
-// }
-
-// function showSlidesMember(n) {
-//     var i;
-//     var slides = document.getElementsByClassName("mySlides-member");
-//     var dots = document.getElementsByClassName("dot-member");
-//     if (n > slides.length) {
-//         slideIndexMember = 1;
-//     }
-//     if (n < 1) {
-//         slideIndexMember = slides.length;
-//     }
-//     for (i = 0; i < slides.length; i++) {
-//         slides[i].style.display = "none";
-//     }
-//     for (i = 0; i < dots.length; i++) {
-//         dots[i].className = dots[i].className.replace(" active", "");
-//     }
-//     console.log({slideIndexMember});
-//     console.log({slides});
-//     console.log(slides[slideIndexMember - 1]);
-//     slides[slideIndexMember - 1].style.display = "block";
-// }
-
-// function showSlidesQuestion(n) {
-
-// }
-// function showSlidesWork(n) {
-
-//     var i;
-//     var slides = document.getElementsByClassName("mySlides-work");
-//     var dots = document.getElementsByClassName("dot-work");
-//     if (n > slides.length) {
-//         slideIndexWork = 1;
-//     }
-//     if (n < 1) {
-//         slideIndexWork = slides.length;
-//     }
-//     for (i = 0; i < slides.length; i++) {
-//         slides[i].style.display = "none";
-//     }
-//     for (i = 0; i < dots.length; i++) {
-//         dots[i].className = dots[i].className.replace(" active", "");
-//     }
-//     slides[slideIndexWork - 1].style.display = "block";
-// }
 
 // latest work para show
 
@@ -246,63 +187,74 @@ $(".btn-book").click(() => {
 	$("#popup").css("display", "flex");
 });
 //form//
-[undefined, 'utm_medium', 'utm_campaign', 'utm_match_type', 'network', 'utm_device', 'utm_keyword', undefined]
-
 var form = document.getElementById("form");
+
 form.addEventListener("submit", (e) => {
 	e.preventDefault();
+	var leadData = new FormData(document.getElementById("form"));
+	console.log({leadData});
+	leadData.append("utm_source", getQueryVariable("utm_source"));
+	leadData.append("utm_medium", getQueryVariable("utm_medium"));
+	leadData.append("utm_campaign", getQueryVariable("utm_campaign"));
+	leadData.append("utm_match_type", getQueryVariable("utm_match_type"));
+	leadData.append("network", getQueryVariable("network"));
+	leadData.append("utm_device", getQueryVariable("utm_device"));
+	leadData.append("utm_keyword", getQueryVariable("utm_keyword"));
 	fetch("https://api.99x.network/v1/crm/new-lead", {
 		method: "POST",
-		body: new FormData(document.getElementById("form")),
+		body: leadData,
 	})
 		.then((res) => {
 			if (res.status === 200) {
 				location.assign("./thanku.html");
+				$('#form-error').text("");
 			}
+			return res.json()
+		})
+		.then((out)=>{
+				console.log({out});
+				$('#form-error').text(out.message);
+
 		})
 		.catch((err) => {
 			console.log(err);
 		});
 });
 
-
-
-$('.slideshow-container').slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    prevArrow: 
-    '<button class="carousel-nav left-btn"><i class="fa fa-chevron-left"></i></button>',
-    nextArrow:
-    '<button class="carousel-nav right-btn"><i class="fa fa-chevron-right"></i></button>',
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
-    ]
-  });
+$(".slideshow-container").slick({
+	dots: true,
+	infinite: true,
+	speed: 300,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	prevArrow: '<button class="carousel-nav left-btn"><i class="fa fa-chevron-left"></i></button>',
+	nextArrow: '<button class="carousel-nav right-btn"><i class="fa fa-chevron-right"></i></button>',
+	responsive: [
+		{
+			breakpoint: 1024,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				infinite: true,
+				dots: true,
+			},
+		},
+		{
+			breakpoint: 600,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 2,
+			},
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+			},
+		},
+		// You can unslick at a given breakpoint now by adding:
+		// settings: "unslick"
+		// instead of a settings object
+	],
+});

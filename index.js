@@ -242,7 +242,7 @@ $('.works').slick({
 	nextArrow: '<button class="carousel-nav right-btn"><i class="fa fa-chevron-right"></i></button>',
 	responsive: [
 		{
-			breakpoint: 425,
+			breakpoint: 600,
 			settings: {
 				slidesToShow: 1,
 				slidesToScroll: 1,

@@ -1454,6 +1454,9 @@ footer p {
 #sticky-btn {
 	display: flex;
 }
+.reach {
+	flex-direction: column;
+}
 }
 
 @media screen and (max-width: 425px) {
@@ -1767,9 +1770,7 @@ footer p {
 		padding: 0px 10px;
 	}
 
-	.reach {
-		flex-direction: column;
-	}
+	
 
 	.footer-container {
 		justify-content: space-between;

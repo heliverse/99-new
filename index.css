@@ -461,7 +461,7 @@ header nav {
 .btn-book {
 	background-color: #000;
 	border: none;
-	color: yellow;
+	color: #fff;
 	font-size: large;
 	font-weight: bold;
 	border-radius: 4px;
@@ -1381,7 +1381,7 @@ footer p {
 	}
 
 	.logo img {
-		width: 150px;
+		width: 120px;
 		height: auto;
 	}
 
@@ -1400,7 +1400,7 @@ footer p {
 	}
 
 	.btn-book {
-		color: yellow;
+		color: #fff;
 		margin: 30px 0px;
 		font-size: 20px;
 		padding: 15px 30px;
@@ -1468,7 +1468,7 @@ footer p {
     margin: 50px 0px;
   } */
 	.call-btn-container {
-		padding: 30px 0px;
+		padding: 30px 10px;
 	}
 
 	.works {

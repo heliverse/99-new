@@ -5,6 +5,7 @@
 	font-weight: 400;
 	font-style: normal;
 }
+
 @font-face {
 	font-family: "neue haas";
 	src: url("./assest/neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayMediu.ttf")
@@ -99,11 +100,13 @@ h4 {
 	font-weight: 400;
 	margin: 20px 0px;
 }
+
 a,
 p,
 div {
 	font-weight: 400;
 }
+
 .underline {
 	color: yellow;
 }
@@ -488,7 +491,6 @@ header nav {
 
 .companies {
 	padding: 50px 0px;
-	background: linear-gradient(180deg, #dc1871 3.56%, #ff0055 100%);
 }
 
 .companies-wrapper {
@@ -653,18 +655,22 @@ header nav {
 	letter-spacing: -0.18px;
 	color: #000000;
 }
-#form-error{
+
+#form-error {
 	color: red;
 	font-weight: 500;
 	text-align: left;
 }
+
 .reach .buttons {
 	display: flex;
 	flex-wrap: wrap;
 }
+
 .reach .buttons a {
 	margin: 10px;
 }
+
 .call-btn-container {
 	background-color: #424ba6;
 	color: white;
@@ -758,33 +764,39 @@ footer {
 	font-weight: 500;
 	font-family: neue haas;
 }
-.carousel-nav{
- background-color: #353535; 
- color: white;
- font-size: 22px;
- font-weight: 400;width: 50px;
- height: 50px;
- border-radius: 50%;
- margin: auto;
- text-align: center;
-line-height: 22px;
-vertical-align: middle;
+
+.carousel-nav {
+	background-color: #353535;
+	color: white;
+	font-size: 22px;
+	font-weight: 400;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin: auto;
+	text-align: center;
+	line-height: 22px;
+	vertical-align: middle;
 }
-.left-btn{
-  position: absolute;
-    top: 50%;
-    left: 5%;
+
+.left-btn {
+	position: absolute;
+	top: 50%;
+	left: 5%;
 }
-.right-btn{
-  position: absolute;
-    top: 50%;
-    right: 5%;
+
+.right-btn {
+	position: absolute;
+	top: 50%;
+	right: 5%;
 }
+
 footer h4 {
 	margin: 0;
 	font-size: 22px;
 	font-weight: 500;
 }
+
 .footer-col > img {
 	width: 121px;
 	height: 32px;
@@ -946,25 +958,34 @@ footer p {
 	padding: 1em;
 }
 
+.exceptional:before {
+	content: "";
+	border-top: 2px dashed white;
+	display: block;
+	position: relative;
+	top: 25px;
+}
+
+.exceptional-section::before {
+	position: absolute;
+	left: -25px;
+	top: 50%;
+}
+
 .exceptional {
-	overflow-x: hidden;
-	display: flex;
+	/* border-top:	2px dashed white; */
 	/* position: sticky; */
-	top: 0;
+	/* top: 0;
 	background-image: linear-gradient(to right, white 33%, rgba(252, 252, 252, 0) 0%);
 	background-position: 100% 58px;
 	background-size: 15px 1px;
-	background-repeat: repeat-x;
+	background-repeat: repeat-x; */
+	padding-bottom: 2em;
 }
 
 .exceptional-section {
 	/* max-width: 500px; */
-	min-width: 30vw;
-	min-height: 350px;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
+	/* min-height: 350px; */
 	padding: 2em;
 	text-align: center;
 }
@@ -976,6 +997,9 @@ footer p {
 	border-radius: 50%;
 	background-color: #dc1871;
 	z-index: 1;
+	position: absolute;
+	top: 0;
+	margin-left: -25px;
 }
 
 /* .exceptional-section::after {
@@ -988,7 +1012,7 @@ footer p {
 
 .exceptional-section h2 {
 	font-weight: 500;
-	max-width: 250px;
+	max-width: 300px;
 	font-size: 32px;
 	line-height: 40px;
 	width: 100%;
@@ -1005,7 +1029,7 @@ footer p {
 
 .exceptional-section p {
 	text-align: center;
-	max-width: 250px;
+	max-width: 300px;
 	margin: 0 auto;
 	font-size: 20px;
 	color: #ffffff;
@@ -1026,8 +1050,66 @@ footer p {
 	font-size: 18px;
 	margin-bottom: 15px;
 }
+
 .footer-col a {
 	font-size: 16px;
+}
+
+.works {
+	width: 100%;
+	display: flex;
+}
+
+.work {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.work img {
+	width: 100%;
+}
+
+.work-desc {
+	font-size: 14px;
+	line-height: 20px;
+	text-align: start;
+	margin-bottom: 15px;
+}
+.badges {
+	margin-bottom: 20px;
+}
+.recent-work-section-mobile.mob{
+	padding: 2em 0;
+}
+.recent-work-heading{
+	text-align: center;
+}
+.badges span {
+	font-size: 12px;
+	padding: 6px;
+	margin-right: 2px;
+	border-radius: 20px;
+	border: 1px solid black;
+}
+
+
+#sticky-btn {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	background-color: white;
+	z-index: 3;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+#sticky-btn button {
+	margin: 10px;
+	font-size: 20px;
+	padding: 20px 150px;
+	color: yellow;
 }
 /* MEDIA queries */
 
@@ -1154,8 +1236,6 @@ footer p {
     margin: 80px 20px;
   } */
 
-	
-
 	.prev,
 	.next {
 		margin: -20px 5px;
@@ -1176,23 +1256,34 @@ footer p {
 		font-size: 40px;
 		padding: 0px 90px;
 	}
-  .footer-container {
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-  }
+
+	.footer-container {
+		grid-template-columns: repeat(2, 1fr);
+		justify-items: center;
+	}
 }
 
 @media screen and (max-width: 768px) {
+	.mob {
+		display: block;
+	}
+	.web{
+		display: none;
+	}
 	h2 {
 		font-size: 30px;
 		line-height: 30px;
 		margin: 20px 0px;
+	}
+	.exceptional:before {
+		border-top: none;
 	}
 	.exceptional-section h2 {
 		font-size: 22px;
 		line-height: 25px;
 		text-align: left;
 	}
+
 	.exceptional-section p {
 		text-align: left;
 	}
@@ -1213,7 +1304,7 @@ footer p {
 
 	.marquee-image,
 	.marquee-image1 {
-		height: 1.5rem;
+		height: 2rem;
 		margin: 0.1rem 0.4rem;
 	}
 
@@ -1252,7 +1343,6 @@ footer p {
 	.container2 > div {
 		width: 100%;
 	}
-	
 
 	.call-btn-container > h3 {
 		font-size: 30px;
@@ -1261,6 +1351,7 @@ footer p {
 	.hide-timeline-wrapper > div h4 {
 		font-size: 12px;
 	}
+
 	.reach .buttons a {
 		margin: 10px 2px;
 	}
@@ -1271,23 +1362,29 @@ footer p {
 		line-height: 18px;
 		padding: 4px 10px;
 	}
+
 	.reach .about-us {
 		font-size: 48px;
 	}
+
 	.buttons {
 		margin-top: 10px;
 	}
+
 	.about-desc {
 		font-weight: 500;
 		font-size: 22px;
 	}
+
 	.sticky-container {
 		height: auto;
 	}
+
 	.exceptional {
 		flex-direction: column;
 		background: none;
 	}
+
 	.exceptional-section {
 		position: relative;
 		justify-content: center;
@@ -1300,22 +1397,26 @@ footer p {
 
 	.exceptional-section::before {
 		position: absolute;
-		left: -25px;
+		left: 0px;
 		top: 50%;
 	}
 
 	.exceptional-section p {
 		max-width: 500px;
 	}
+
 	.exceptional-section h2 {
 		max-width: 500px;
 	}
+
 	.sticky-container h2.white {
 		text-align: left;
 	}
+
 	.social-section a {
 		font-size: 18px;
 	}
+
 	.business-logo a {
 		font-size: 14px;
 	}
@@ -1324,25 +1425,40 @@ footer p {
 		font-size: 12px;
 		line-height: 14px;
 	}
+
 	.row-hide-container {
 		padding: 1rem;
 	}
+
 	.case-study-btn {
 		display: none;
 	}
+
 	footer {
 		padding: 0rem 1rem;
 	}
 
+	.sticky-container.web {
+		display: none;
+	}
+
+	.sticky-container.mob {
+		display: block;
+	}
+#sticky-btn {
+	display: flex;
+}
 }
 
 @media screen and (max-width: 425px) {
 	.footer-container {
 		padding: 2em 0;
 	}
+
 	.footer-col {
 		padding: 10px 0;
 	}
+
 	.exceptional-section {
 		max-width: 300px;
 		padding-left: 50px;
@@ -1408,7 +1524,7 @@ footer p {
 
 	.marquee-image,
 	.marquee-image1 {
-		height: 0.9rem;
+		height: 2rem;
 	}
 
 	.marquee-container,
@@ -1440,24 +1556,6 @@ footer p {
 		left: 0;
 	}
 
-	#sticky-btn {
-		position: fixed;
-		width: 100%;
-		bottom: 0;
-		background-color: white;
-		z-index: 3;
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-		align-items: center;
-	}
-
-	#sticky-btn button {
-		margin: 10px;
-		background: #2f2f2f;
-		font-size: 20px;
-		padding: 20px 150px;
-	}
 
 	.recent-work-section-mobile {
 		margin: 50px 0px;
@@ -1469,44 +1567,6 @@ footer p {
   } */
 	.call-btn-container {
 		padding: 30px 10px;
-	}
-
-	.works {
-		width: 1000%;
-		display: flex;
-	}
-
-	.work {
-		display: flex;
-		width: 90%;
-		margin-right: 50px;
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	.work img {
-		width: 100%;
-	}
-
-	.work-desc {
-		font-size: 14px;
-		line-height: 20px;
-		text-align: start;
-		margin-bottom: 15px;
-	}
-
-	.badges {
-		margin-bottom: 20px;
-	}
-
-
-    .badges span {
-      font-size: 12px;
-      padding: 6px;
-      margin-right: 2px;
-      border-radius: 20px;
-      border: 1px solid black;
-
 	}
 
 	.feature-section-mobile > div {
@@ -1554,6 +1614,7 @@ footer p {
 		padding: 10px 10px 10px 0px;
 		width: 100%;
 	}
+
 	.copyright {
 		border-top: 2pxsolid white;
 		padding: 1rem;
@@ -1696,12 +1757,15 @@ footer p {
 	.social-container {
 		padding: 4em 0;
 	}
+
 	.call-btn-container > h3 {
 		padding: 0px 10px;
 	}
+
 	.reach {
 		flex-direction: column;
 	}
+
 	.footer-container {
 		justify-content: space-between;
 	}

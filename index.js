@@ -220,6 +220,46 @@ form.addEventListener("submit", (e) => {
 			console.log(err);
 		});
 });
+$('#exceptional').slick({
+	dots: false,
+	slidesToShow: 3,
+	autoplay: true,
+	autoplaySpeed: 0,
+	speed: 5000,
+	cssEase:'linear',
+	infinite: true,
+	// focusOnSelect: false,
+	prevArrow: '<button class="carousel-nav left-btn"><i class="fa fa-chevron-left"></i></button>',
+	nextArrow: '<button class="carousel-nav right-btn"><i class="fa fa-chevron-right"></i></button>',
+});
+
+
+$('.works').slick({
+	dots: false,
+	centerMode: false,
+	speed: 300,
+	slidesToScroll: 1,
+	slidesToShow: 1,
+	prevArrow: '<button class="carousel-nav left-btn"><i class="fa fa-chevron-left"></i></button>',
+	nextArrow: '<button class="carousel-nav right-btn"><i class="fa fa-chevron-right"></i></button>',
+	responsive: [
+		{
+			breakpoint: 425,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+			},
+		},
+		{
+			breakpoint: 728,
+			settings: {
+				slidesToShow: 1.5,
+				slidesToScroll: 1,
+				
+			},
+		},
+	]
+});
 
 $(".slideshow-container").slick({
 	dots: true,

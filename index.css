@@ -248,7 +248,7 @@ div {
 	height: 100vh;
 	display: none;
 	text-align: center;
-	z-index: 1;
+	z-index: 5;
 	background-color: #00000085;
 	flex-direction: column;
 	align-items: center;
@@ -998,10 +998,9 @@ footer p {
 	background-color: #dc1871;
 	z-index: 1;
 	top: 0;
-	margin:auto;
+	margin: auto;
 	margin-top: -30px;
 	display: block;
-
 }
 
 /* .exceptional-section::after {
@@ -1078,15 +1077,19 @@ footer p {
 	text-align: start;
 	margin-bottom: 15px;
 }
+
 .badges {
 	margin-bottom: 20px;
 }
-.recent-work-section-mobile.mob{
+
+.recent-work-section-mobile.mob {
 	padding: 2em 0;
 }
-.recent-work-heading{
+
+.recent-work-heading {
 	text-align: center;
 }
+
 .badges span {
 	font-size: 12px;
 	padding: 6px;
@@ -1095,7 +1098,6 @@ footer p {
 	border: 1px solid black;
 	line-height: 34px;
 }
-
 
 #sticky-btn {
 	position: fixed;
@@ -1114,11 +1116,11 @@ footer p {
 	padding: 20px 150px;
 	color: yellow;
 }
+
 .row-hide-container {
-	background:linear-gradient(360deg, rgba(0, 0, 0, 0.78) 25.63%, rgba(0, 0, 0, 0) 100%);
+	background: linear-gradient(360deg, rgba(0, 0, 0, 0.78) 25.63%, rgba(0, 0, 0, 0) 100%);
 	padding: 3rem;
 }
-
 
 /* MEDIA queries */
 
@@ -1136,7 +1138,6 @@ footer p {
 		font-size: 25px;
 		margin: 15px 0px;
 	}
-
 
 	.row-hide-container > div div {
 		padding: 0.5rem;
@@ -1273,17 +1274,21 @@ footer p {
 	.mob {
 		display: block;
 	}
-	.web{
+
+	.web {
 		display: none;
 	}
+
 	h2 {
 		font-size: 30px;
 		line-height: 30px;
 		margin: 20px 0px;
 	}
+
 	.exceptional:before {
 		border-top: none;
 	}
+
 	.exceptional-section h2 {
 		font-size: 22px;
 		line-height: 25px;
@@ -1451,12 +1456,14 @@ footer p {
 	.sticky-container.mob {
 		display: block;
 	}
-#sticky-btn {
-	display: flex;
-}
-.reach {
-	flex-direction: column;
-}
+
+	#sticky-btn {
+		display: flex;
+	}
+
+	.reach {
+		flex-direction: column;
+	}
 }
 
 @media screen and (max-width: 425px) {
@@ -1564,7 +1571,6 @@ footer p {
 		top: 0;
 		left: 0;
 	}
-
 
 	.recent-work-section-mobile {
 		margin: 50px 0px;
@@ -1769,8 +1775,6 @@ footer p {
 	.call-btn-container > h3 {
 		padding: 0px 10px;
 	}
-
-	
 
 	.footer-container {
 		justify-content: space-between;

@@ -1093,6 +1093,7 @@ footer p {
 	margin-right: 2px;
 	border-radius: 20px;
 	border: 1px solid black;
+	line-height: 34px;
 }
 
 
@@ -1113,6 +1114,12 @@ footer p {
 	padding: 20px 150px;
 	color: yellow;
 }
+.row-hide-container {
+	background:linear-gradient(360deg, rgba(0, 0, 0, 0.78) 25.63%, rgba(0, 0, 0, 0) 100%);
+	padding: 3rem;
+}
+
+
 /* MEDIA queries */
 
 @media screen and (max-width: 1250px) {
@@ -1130,9 +1137,6 @@ footer p {
 		margin: 15px 0px;
 	}
 
-	.row-hide-container {
-		padding: 3rem;
-	}
 
 	.row-hide-container > div div {
 		padding: 0.5rem;
@@ -1679,7 +1683,6 @@ footer p {
 
 	.work-desc {
 		font-size: 14px;
-		width: 80%;
 	}
 
 	.call-btn-container > h3 {

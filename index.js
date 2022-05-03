@@ -223,11 +223,8 @@ form.addEventListener("submit", (e) => {
 $('#exceptional').slick({
 	dots: false,
 	slidesToShow: 3,
-	slidesToScroll:1,
-	autoplay: true,
-	autoplaySpeed: 0,
-	speed: 5000,
-	cssEase:'linear',
+	slidesToScroll:3,
+	speed: 3000,
 	infinite: true,
 	// focusOnSelect: false,
 	prevArrow: '<button class="carousel-nav left-btn"><i class="fa fa-chevron-left"></i></button>',

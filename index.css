@@ -966,11 +966,11 @@ footer p {
 	top: 25px;
 }
 
-.exceptional-section::before {
+/* .exceptional-section::before {
 	position: absolute;
 	left: -25px;
 	top: 50%;
-}
+} */
 
 .exceptional {
 	/* border-top:	2px dashed white; */
@@ -997,9 +997,11 @@ footer p {
 	border-radius: 50%;
 	background-color: #dc1871;
 	z-index: 1;
-	position: absolute;
 	top: 0;
-	margin-left: -25px;
+	margin:auto;
+	margin-top: -30px;
+	display: block;
+
 }
 
 /* .exceptional-section::after {
@@ -1397,7 +1399,7 @@ footer p {
 
 	.exceptional-section::before {
 		position: absolute;
-		left: 0px;
+		left: -25px;
 		top: 50%;
 	}
 

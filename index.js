@@ -223,6 +223,7 @@ form.addEventListener("submit", (e) => {
 $('#exceptional').slick({
 	dots: false,
 	slidesToShow: 3,
+	slidesToScroll:1,
 	autoplay: true,
 	autoplaySpeed: 0,
 	speed: 5000,

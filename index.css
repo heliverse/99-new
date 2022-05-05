@@ -390,16 +390,16 @@ header nav {
 	padding: 20px 0px;
 	align-items: center;
 }
-.header-right{
+.header-right {
 	display: flex;
 }
-.header-right h4 a{
-font-size: 20px;
-color: white;
-text-decoration: none;
-line-height: 32px;
+.header-right h4 a {
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+	line-height: 32px;
 }
-.header-right h4 a.whatsapp-icon{
+.header-right h4 a.whatsapp-icon {
 	font-size: 32px;
 }
 .transition-container {
@@ -789,9 +789,9 @@ footer {
 	line-height: 22px;
 	vertical-align: middle;
 }
-.work a{
+.work a {
 	text-decoration: none;
-    color: #000;
+	color: #000;
 }
 .left-btn {
 	position: absolute;

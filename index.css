@@ -390,7 +390,18 @@ header nav {
 	padding: 20px 0px;
 	align-items: center;
 }
-
+.header-right{
+	display: flex;
+}
+.header-right h4 a{
+font-size: 20px;
+color: white;
+text-decoration: none;
+line-height: 32px;
+}
+.header-right h4 a.whatsapp-icon{
+	font-size: 32px;
+}
 .transition-container {
 	margin: 50px 0px;
 }

@@ -482,7 +482,9 @@ header nav {
 	padding: 16px 52px;
 	margin: 50px 0px;
 }
-
+.btn-book:hover {
+	color: yellow;
+}
 .call-btn-container .btn-book {
 	margin: 20px 0px;
 }
@@ -796,14 +798,14 @@ footer {
 .left-btn {
 	position: absolute;
 	top: 50%;
-	left: 5%;
+	left: 2%;
 	z-index: 3;
 }
 
 .right-btn {
 	position: absolute;
 	top: 50%;
-	right: 5%;
+	right: 2%;
 }
 
 footer h4 {
@@ -1286,6 +1288,15 @@ footer p {
 }
 
 @media screen and (max-width: 768px) {
+	.reach .second-half{
+		padding: 1em 0em;
+    margin: 0;
+	}
+	.carousel-nav{
+		font-size: 15px;
+		width: 30px;
+		height: 30px;
+	}
 	.mob {
 		display: block;
 	}
@@ -1384,7 +1395,6 @@ footer p {
 
 	.custom-button {
 		padding: 3px 10px;
-		font-size: 14px;
 		line-height: 18px;
 		padding: 4px 10px;
 	}

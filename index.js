@@ -1,3 +1,21 @@
+//transition text //
+
+let topics = ["Mobile Apps ", "Websites ", "Products"];
+
+new Typed("#typed", {
+	strings: topics,
+	typeSpeed: 80,
+	delaySpeed: 80,
+	loop: true,
+});
+
+new Typed("#type", {
+	strings: topics,
+	typeSpeed: 80,
+	delaySpeed: 80,
+	loop: true,
+});
+
 $( document ).ready(function() {
 
 function getQueryVariable(variable) {
@@ -57,23 +75,6 @@ function Marquee() {
 	});
 }
 
-//transition text //
-
-let topics = ["Mobile Apps ", "Websites ", "Products"];
-
-new Typed("#typed", {
-	strings: topics,
-	typeSpeed: 80,
-	delaySpeed: 80,
-	loop: true,
-});
-
-new Typed("#type", {
-	strings: topics,
-	typeSpeed: 80,
-	delaySpeed: 80,
-	loop: true,
-});
 
 // latest work para show
 

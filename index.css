@@ -368,7 +368,11 @@ select {
 	text-align: center;
 	transition: all 0.5s ease-out;
 }
+#bottom-section {
+	display: none;
+	color: white;
 
+}
 #loader.hide-loader {
 }
 
@@ -430,14 +434,18 @@ header {
 }
 
 .top-section {
-	transform: translateY(100%);
-	animation: reveal 0.5s forwards;
+	/* transform: translateY(100%);
+	animation: reveal 0.5s forwards; */
 	text-align: center;
 	background: linear-gradient(180deg, #dd166c 3.56%, #dd166c 100%),
 		linear-gradient(180deg, #000000 3.56%, #353535 100%);
 	color: white;
 }
-
+.companies{
+	background: linear-gradient(180deg, #dd166c 3.56%, #dd166c 100%),
+	linear-gradient(180deg, #000000 3.56%, #353535 100%);
+text-align: center;
+}
 .follow-heading {
 	font-family: neue haas;
 	font-weight: 500;

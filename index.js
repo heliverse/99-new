@@ -1,3 +1,5 @@
+$( document ).ready(function() {
+
 function getQueryVariable(variable) {
 	var query = window.location.search.substring(1);
 	var vars = query.split("&");
@@ -19,17 +21,7 @@ async function myTimer() {
 		setTimeout(() => {
 			$("#loader").css("display", "none");
 			$(".header-right").css("display", "flex");
-		}, 500);
-
-		video[0].currentTime = 1;
-		Marquee();
-		clearInterval(myVar);
-	} else {
-		$("#loader").css("display", "block");
-		// $(".container").css("display", "none");
-	}
-}
-
+			$("#bottom-section").css("display", "block");
 //video unmute mute function
 
 video.click(function () {
@@ -283,3 +275,16 @@ $(".slideshow-container").slick({
 		// instead of a settings object
 	],
 });
+video[0].currentTime = 1;
+Marquee();
+clearInterval(myVar);
+		}, 500);
+
+	} else {
+		$("#loader").css("display", "block");
+		// $(".container").css("display", "none");
+	}
+}
+
+
+})

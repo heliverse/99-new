@@ -361,17 +361,17 @@ select {
 	height: 100vh;
 	width: 100%;
 	z-index: 1;
-position: absolute;
-top: 0;
+	position: absolute;
+	top: 0;
 	background: linear-gradient(180deg, #000000 3.56%, #353535 100%);
 	color: var(--color-primary);
 	text-align: center;
-	transition: all .5s ease-out;
-
+	transition: all 0.5s ease-out;
 }
-#loader.hide-loader{
 
+#loader.hide-loader {
 }
+
 video {
 	width: 100%;
 	object-fit: fill;
@@ -398,30 +398,37 @@ header nav {
 	padding: 20px 0px;
 	align-items: center;
 }
+
 .header-right {
 	display: none;
 }
+
 .header-right h4 a {
 	font-size: 20px;
 	color: white;
 	text-decoration: none;
 	line-height: 32px;
 }
+
 .header-right h4 a.whatsapp-icon {
 	font-size: 32px;
 }
+
 .transition-container {
 	margin-top: 50px;
 	position: relative;
 	z-index: 2;
 }
-.video-container{
+
+.video-container {
 	margin-top: 20px;
 }
-header{
+
+header {
 	position: relative;
 	z-index: 2;
 }
+
 .top-section {
 	transform: translateY(100%);
 	animation: reveal 0.5s forwards;
@@ -498,9 +505,11 @@ header{
 	padding: 16px 52px;
 	margin: 50px 0px;
 }
+
 .btn-book:hover {
 	color: yellow;
 }
+
 .call-btn-container .btn-book {
 	margin: 20px 0px;
 }
@@ -807,10 +816,12 @@ footer {
 	line-height: 22px;
 	vertical-align: middle;
 }
+
 .work a {
 	text-decoration: none;
 	color: #000;
 }
+
 .left-btn {
 	position: absolute;
 	top: 50%;
@@ -1304,15 +1315,17 @@ footer p {
 }
 
 @media screen and (max-width: 768px) {
-	.reach .second-half{
+	.reach .second-half {
 		padding: 1em 0em;
-    margin: 0;
+		margin: 0;
 	}
-	.carousel-nav{
+
+	.carousel-nav {
 		font-size: 15px;
 		width: 30px;
 		height: 30px;
 	}
+
 	.mob {
 		display: block;
 	}

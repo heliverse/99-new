@@ -15,14 +15,18 @@ var video = $("#myvideo");
 var myVar = setInterval(myTimer, 1000);
 async function myTimer() {
 	if (video[0].readyState === 4) {
-		$("#loader").css("display", "none");
-		$(".container").css("display", "block");
+		$("#loader").css("height", "0px");
+		setTimeout(() => {
+			$("#loader").css("display", "none");
+			$(".header-right").css("display", "flex");
+		}, 500);
+
 		video[0].currentTime = 1;
 		Marquee();
 		clearInterval(myVar);
 	} else {
 		$("#loader").css("display", "block");
-		$(".container").css("display", "none");
+		// $(".container").css("display", "none");
 	}
 }
 
@@ -66,20 +70,6 @@ function Marquee() {
 let topics = ["Mobile Apps ", "Websites ", "Products"];
 
 new Typed("#typed", {
-	strings: topics,
-	typeSpeed: 80,
-	delaySpeed: 80,
-	loop: true,
-});
-
-new Typed("#ty", {
-	strings: topics,
-	typeSpeed: 80,
-	delaySpeed: 80,
-	loop: true,
-});
-
-new Typed("#typ", {
 	strings: topics,
 	typeSpeed: 80,
 	delaySpeed: 80,
@@ -192,7 +182,7 @@ var form = document.getElementById("form");
 form.addEventListener("submit", (e) => {
 	e.preventDefault();
 	var leadData = new FormData(document.getElementById("form"));
-	console.log({leadData});
+	console.log({ leadData });
 	leadData.append("utm_source", getQueryVariable("utm_source"));
 	leadData.append("utm_medium", getQueryVariable("utm_medium"));
 	leadData.append("utm_campaign", getQueryVariable("utm_campaign"));
@@ -207,23 +197,22 @@ form.addEventListener("submit", (e) => {
 		.then((res) => {
 			if (res.status === 200) {
 				location.assign("./thanku.html");
-				$('#form-error').text("");
+				$("#form-error").text("");
 			}
-			return res.json()
+			return res.json();
 		})
-		.then((out)=>{
-				console.log({out});
-				$('#form-error').text(out.message);
-
+		.then((out) => {
+			console.log({ out });
+			$("#form-error").text(out.message);
 		})
 		.catch((err) => {
 			console.log(err);
 		});
 });
-$('#exceptional').slick({
+$("#exceptional").slick({
 	dots: false,
 	slidesToShow: 3,
-	slidesToScroll:3,
+	slidesToScroll: 3,
 	speed: 3000,
 	infinite: true,
 	// focusOnSelect: false,
@@ -231,8 +220,7 @@ $('#exceptional').slick({
 	nextArrow: '<button class="carousel-nav right-btn"><i class="fa fa-chevron-right"></i></button>',
 });
 
-
-$('.works').slick({
+$(".works").slick({
 	dots: false,
 	centerMode: false,
 	speed: 300,
@@ -253,10 +241,9 @@ $('.works').slick({
 			settings: {
 				slidesToShow: 1.5,
 				slidesToScroll: 1,
-				
 			},
 		},
-	]
+	],
 });
 
 $(".slideshow-container").slick({

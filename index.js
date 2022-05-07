@@ -32,6 +32,7 @@ function getQueryVariable(variable) {
 
 // video load function
 var video = $("#myvideo");
+console.log({video});
 var myVar = setInterval(myTimer, 1000);
 async function myTimer() {
 	if (video[0].readyState === 4) {

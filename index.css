@@ -1165,8 +1165,8 @@ footer p {
 #sticky-btn button {
 	margin: 10px;
 	font-size: 20px;
-	padding: 20px 150px;
 	color: yellow;
+	width: 90%;
 }
 
 .row-hide-container {
@@ -1232,8 +1232,8 @@ footer p {
 	}
 
 	h1 {
-		font-size: 45px;
-		line-height: 50px;
+		font-size: 40px;
+		line-height: 42px;
 	}
 
 	h2 {

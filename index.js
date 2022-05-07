@@ -35,7 +35,10 @@ var video = $("#myvideo");
 console.log({video});
 var myVar = setInterval(myTimer, 1000);
 async function myTimer() {
+	console.log("Timer");
 	if (video[0].readyState === 4) {
+		console.log(video[0]);
+		console.log(video[0].readyState);
 		$("#loader").css("height", "0px");
 		setTimeout(() => {
 			$("#loader").css("display", "none");

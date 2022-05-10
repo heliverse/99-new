@@ -1135,9 +1135,7 @@ footer p {
 	margin-bottom: 20px;
 }
 
-.recent-work-section-mobile.mob {
-	padding: 2em 0;
-}
+
 
 .recent-work-heading {
 	text-align: center;
@@ -1648,7 +1646,7 @@ footer p {
 	}
 
 	.recent-work-section-mobile > div {
-		padding: 50px 20px;
+		padding: 20px;
 	}
 
 	.feature-heading {

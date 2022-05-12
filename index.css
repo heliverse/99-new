@@ -440,10 +440,10 @@ header {
 		linear-gradient(180deg, #000000 3.56%, #353535 100%);
 	color: white;
 }
-.companies{
+.companies {
 	background: linear-gradient(180deg, #dd166c 3.56%, #dd166c 100%),
-	linear-gradient(180deg, #000000 3.56%, #353535 100%);
-text-align: center;
+		linear-gradient(180deg, #000000 3.56%, #353535 100%);
+	text-align: center;
 }
 .follow-heading {
 	font-family: neue haas;
@@ -543,7 +543,7 @@ text-align: center;
 	margin: auto;
 	overflow: hidden;
 }
-.companies-wrapper h3{
+.companies-wrapper h3 {
 	color: white;
 }
 .recent-work-section,
@@ -1135,8 +1135,6 @@ footer p {
 	margin-bottom: 20px;
 }
 
-
-
 .recent-work-heading {
 	text-align: center;
 }
@@ -1164,7 +1162,6 @@ footer p {
 #sticky-btn button {
 	margin: 10px;
 	font-size: 20px;
-	color: yellow;
 	width: 90%;
 }
 
